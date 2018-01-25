@@ -21,26 +21,16 @@
 
   <!-- CSS -->
   <!-- Card css -->
-  <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+  <link id="theme-style" rel="stylesheet" href="assets/css/styles.min.css">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 
-  <!-- JS -->
-  <!-- Font awesome JS -->
-  <script src="https://use.fontawesome.com/1688c333dd.js"></script>
-
-  <!-- Github -->
-  <script
-  src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js">
-</script>
-<link rel="stylesheet" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"
-/>
 </head>
 
 <body>
 
-    <body class="vsc-initialized sticky-page-nav">
+    <body>
 
 
         <!-- Hotjar Tracking Code for https://www.simoninithomas/aboutme -->
@@ -97,8 +87,14 @@
                         <p>
                             Hey there ! My name is Thomas Simonini.<br>
                             <br>
-                            I'm a <b>deep learning engineer</b> and I <a href="https://medium.com/@thomassimonini">write articles about it.</a> I successfully passed Deep Learning Foundations Nanodegree and AI Nanodegree by Udacity. 
-                            <br><br>
+                           I'm a <b>deep learning engineer</b> who loves making AI and I <a href="https://medium.com/@thomassimonini">write articles about it.</a> 
+              <br>
+              <br>
+
+              I've recently founded <a href="https://simoninithomas.github.io/gameplAI/"/>GameplAI an open source AI that learns to speedrun video games. </a> Our goal is to improve the state of the art of Reinforcement Learning. 🎮🕹️📺👾
+
+              <br><br>
+
                             ⚠️  I’m currently <b>looking for a job 👨‍💻</b>:   <a href="mailto:hello@simoninithomas.com">drop me a line 
                         </a>
 
@@ -109,7 +105,7 @@
                         My last projects 🤖 :
                     </p><div style="text-align:left;!important">
                     <ul>
-                        <li> <a href="https://github.com/simoninithomas/Policy_gradients_CartPole">GameplAI</a>: an agent that learn to speedrun games 🎮🕹️📺👾</li>
+                        <li> <a href="https://simoninithomas.github.io/gameplAI/">GameplAI</a>: an agent that learn to speedrun games 🎮🕹️📺👾</li>
                         <li> <a href="https://github.com/simoninithomas/policy_gradients_pong">Siraj Raval's challenge</a>: Pong Policy gradient: an agent that learn to play at Pong</li>
                         <li><a href="https://github.com/simoninithomas/aind2-nlp-capstone">Sequence-to-Sequence Translation project</a></li>
 
@@ -139,7 +135,7 @@
                     <li class=""><a class="scrollto" href="#experiences-section">Experiences</a></li>
                     <li class=""><a class="scrollto" href="#education-section">Education</a></li>
                     <li class=""><a class="scrollto" href="#skills-section">Skills</a></li>
-                    <li class=""><a class="scrollto" href="#github-section">Github</a></li>
+                    <!--<li class=""><a class="scrollto" href="#github-section">Github</a></li>-->
                     <li class="active"><a class="scrollto" href="#blog-section">Blog Posts</a></li>
                     <li class=""><a class="scrollto" href="#portfolio-section">Portfolio</a></li>
                     <li class=""><a class="scrollto" href="#contact-section">Contact</a></li>
@@ -188,9 +184,25 @@
                     <div class="time">June - September 2016</div>
                 </div><!--//job-meta-->
                 <div class="job-desc">
-                    <p>I was hired to create the <a href="https://boutique.univ-lyon3.fr/">marketplace for the University.</a>
+                    <!--<p>I was hired to create the marketplace for the University.
                         My missions were to create the marketplace, find and negociate with the suppliers, promote the
-                        marketplace and because I have legal skills, write the contracts.</p>
+                        marketplace and because I have legal skills, write the contracts.</p>-->
+
+
+                    <p>I was hired to develop with Prestashop: <a href="https://boutique.univ-lyon3.fr/">"L'Echoppe" the Jean Moulin's University's marketplace.</a> </p>
+
+<p>The goal of this marketplace is to sell T-shirt and goodies in the image of the university. But also asking student to create and design some of it.</p>
+
+<p>In addition to my mission of developing the marketplace with Prestashop, the administration gave me a lot of freedom. And as a consequence, I actively participated in the project: find suppliers, negotiate prices with them, create an effective communication plan...</p>
+
+<p>This experience was really intense (4 months to develop the project from scratch) but also very rewarding because I was able to take initiatives and I learned a lot of skills on the job: communication, negotiation...</p>
+
+
+
+
+
+
+
                     </div><!--//job-desc-->
                 </div><!--//item-->
 
@@ -239,7 +251,9 @@
                             <div class="job-desc">
                                 <p>Development of our first startup 'Alumni': 'The Trip Advisor for studies', the value proposition
                                     was to allow former students to comment and rate their formations (the quality of the studies,
-                                    the quality of the infrastructures and employment opportunities). However, the business plan was
+                                    the quality of the infrastructures and employment opportunities). </p>
+
+                                    <p>However, the business plan was
                                     not good because Universities didn't want to pay for the service except if they can delete bad
                                     reviews (it was against our policy consequently we stopped the journey).</p>
                                 </div><!--//job-desc-->
@@ -539,11 +553,11 @@
         <!-- Prepare a container for your calendar. -->
 
 
-        <!--//section-->
+        <!--//section
         <section ng-controller="github" id="github-section" class="blog-section section text-center">
             <h2 class="section-title">Github Activity</h2>
             <div class="calendar">
-                <!-- Loading stuff -->
+                <!-- Loading stuff 
                 Loading the data just for you.
             </div>
 
@@ -551,415 +565,385 @@
                 GitHubCalendar(".calendar", "simoninithomas");
             </script>
         </section>
+    -->
 
+    <section id="blog-section" class="blog-section section text-center">
+        <h2 class="section-title">Latest Blog Posts</h2>
+        <div class="top-skills">
 
-        <section id="blog-section" class="blog-section section text-center">
-            <h2 class="section-title">Latest Blog Posts</h2>
-            <div class="top-skills">
-
-                <div class="row">
-                    <div class="item col-xs-12 col-sm-4 col-lg-4">
-                        <div class="item-inner blog-image">
-                            <a href="https://medium.com/@thomassimonini/how-i-quit-my-law-studies-to-learn-online-what-i-love-ai-44548efc53db">
-                                <h4 class="skill-name">How I quit my Law studies to learn online what I love:&nbsp;AI
-                                </h4>
-                            </a>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card">
+                      <img class="card-img-top img-fluid" src="assets/images/portfolio/DLFN_project5.jpg" alt="AI">
+                      <div class="card-block">
+                        <a href="https://medium.com/@thomassimonini/how-i-quit-my-law-studies-to-learn-online-what-i-love-ai-44548efc53db">
+                            <h4 class="skill-name">How I quit my Law studies to learn online what I love:&nbsp;AI
+                            </h4>
                             <h5>And why you should do the&nbsp;same.</h5>
-                            <img class="img-fluid" src="assets/images/portfolio/DLFN_project5.jpg" alt="AI">
-                        </div><!--//item-inner-->
-                    </div><!--//item-->
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-                    <div class="item col-xs-12 col-sm-4 col-lg-4">
-                        :
-                        <div class="item-inner blog-image">
-                            <a href="https://medium.com/@thomassimonini/how-i-made-an-awesome-low-poly-scene-in-4-days-e51433146018">
-                                <h4 class="skill-name">How I Made an Awesome Low-poly Scene in 4 Days</h4>
-                            </a>
-                            <img class="img-fluid" src="assets/images/blog/low poly scene.png" alt="Low poly scene">
-                            <div class="desc">
-                                I made this scene in 4 days, 3 hours per day with no prior experience in low poly. I’ve
-                                already
-                                created some small scenes with Blender but it was the first time that I tried to create
-                                low-poly.
-                                How I did that? I’ve done it step by step with a clear planning and a precise goal...
-
-                            </div>
-                        </div><!--//item-inner-->
-                    </div><!--//item-->
-                    <div class="item col-xs-12 col-sm-4 col-lg-4">
-                        <div class="item-inner blog-image">
-                            <a href="https://medium.com/@thomassimonini/recyclerview-made-easy-16bf2e261694"><h4 class="skill-name">RecyclerView made easy</h4></a>
-                            <img  class="img-fluid" src="assets/images/blog/android-logo.jpg" alt="Android Logo">
-                            <div class="desc">
-                                This article will explain what is RecyclerView and how to use it with an example : a simple
-                                News App.
-                                ...
-
-                            </div>
-                        </div><!--//item-inner-->
-                    </div><!--//item-->
-                <!--<div class="item col-xs-12 col-sm-4">
-                    <div class="item-inner">
-                        <div class="chart-easy-pie text-center">
-                            <div class="chart-theme-1 chart" data-percent="85"><span>85</span>%</div>
-                        </div>
-                        <h4 class="skill-name">React &amp; Angular</h4>
-                        <div class="level">Advanced, 4 years</div>
-                        <div class="desc">
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
-                        </div>
-                    </div><!--//item-inner--
-                </div><!--//item-->
-            </div><!--//row-->
-        </div><!--//top-skills-->
-
-    </section><!--//skills-section-->
+            <div class="col-lg-6">
+                <div class="card">
+                  <img class="card-img-top img-fluid"  src="assets/images/blog/low poly scene.png" alt="Low poly scene">
+                  <div class="card-block">
+                     <a href="https://medium.com/@thomassimonini/how-i-made-an-awesome-low-poly-scene-in-4-days-e51433146018">
+                        <h4 class="skill-name">How I Made an Awesome Low-poly Scene in 4 Days</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
 
 
-    <section id="portfolio-section" class="portfolio-section section">
-        <h2 class="section-title">Portfolio</h2>
-        <ul id="filters" class="filters clearfix">
-            <li class="type active" data-filter="*">All</li>
-            <li class="type" data-filter=".ai">AI</li>
-            <li class="type" data-filter=".frontend">Front-end</li>
-            <li class="type" data-filter=".backend">Back-end</li>
-            <li class="type" data-filter=".app">Android apps</li>
-        </ul><!--//filters-->
 
-        <!-- AINANOTERM2 Project 4 -->
-        <div class="items-wrapper isotope row" >
+<section id="portfolio-section" class="portfolio-section section">
+    <h2 class="section-title">Portfolio</h2>
+    <ul id="filters" class="filters clearfix">
+        <li class="type active" data-filter="*">All</li>
+        <li class="type" data-filter=".ai">AI</li>
+        <li class="type" data-filter=".frontend">Front-end</li>
+        <li class="type" data-filter=".backend">Back-end</li>
+        <li class="type" data-filter=".app">Android apps</li>
+    </ul><!--//filters-->
 
+    <!-- AINANOTERM2 Project 4 -->
+    <div class="items-wrapper isotope row" >
+
+        <div class="item ai col-md-3 col-xs-6 ">
+            <div class="item-inner">
+                <figure class="figure">
+                    <img class="img-fluid" src="assets/images/portfolio/DLFN_project8.jpg" alt="DLFN Project 8">
+                </figure>
+                <div class="content text-left">
+                    <h3 class="sub-title"><a href="https://github.com/simoninithomas/aind2-nlp-capstone">Deep Learning:Translation project </a></h3>
+                    <div class="meta">Keras</div>
+                    <div class="action"><a href="https://github.com/simoninithomas/aind2-nlp-capstone">View on
+                        Github</a></div>
+                    </div><!--//content-->
+                    <a class="link-mask" href="https://github.com/simoninithomas/aind2-nlp-capstone"></a>
+                </div><!--//item-inner-->
+            </div><!--//item-->
+
+
+
+            <!-- Cartpole Policy gradient -->
             <div class="item ai col-md-3 col-xs-6 ">
                 <div class="item-inner">
                     <figure class="figure">
-                        <img class="img-fluid" src="assets/images/portfolio/DLFN_project8.jpg" alt="">
+                        <img class="img-fluid" src="https://camo.githubusercontent.com/0f67dbe101fc69fb7ee25fd314438569696d3d72/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313230302f312a475f7768744972593966476c773349743648466668412e676966" alt="Cartpole">
                     </figure>
                     <div class="content text-left">
-                        <h3 class="sub-title"><a href="https://github.com/simoninithomas/aind2-nlp-capstone">Deep Learning:Translation project </a></h3>
+                        <h3 class="sub-title"><a href="https://github.com/simoninithomas/Policy_gradients_CartPole">Deep Learning: Policy Gradient Cartplot </a></h3>
                         <div class="meta">Keras</div>
-                        <div class="action"><a href="https://github.com/simoninithomas/aind2-nlp-capstone">View on
+                        <div class="action"><a href="https://github.com/simoninithomas/Policy_gradients_CartPole">View on
                             Github</a></div>
                         </div><!--//content-->
-                        <a class="link-mask" href="https://github.com/simoninithomas/aind2-nlp-capstone"></a>
+                        <a class="link-mask" href="https://github.com/simoninithomas/Policy_gradients_CartPole"></a>
                     </div><!--//item-inner-->
                 </div><!--//item-->
 
-
-
-                <!-- Cartpole Policy gradient -->
+                <!-- AINANOTERM2 Project 3 -->
                 <div class="item ai col-md-3 col-xs-6 ">
                     <div class="item-inner">
                         <figure class="figure">
-                            <img class="img-fluid" src="https://camo.githubusercontent.com/0f67dbe101fc69fb7ee25fd314438569696d3d72/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313230302f312a475f7768744972593966476c773349743648466668412e676966" alt="">
+                            <img class="img-fluid" src="assets/images/portfolio/AINANO2.jpg" alt="Computer Vision">
                         </figure>
                         <div class="content text-left">
-                            <h3 class="sub-title"><a href="https://github.com/simoninithomas/Policy_gradients_CartPole">Deep Learning: Policy Gradient Cartplot </a></h3>
+                            <h3 class="sub-title"><a href="https://github.com/simoninithomas/AI_NANODEGREE-Computer-Vision-Capstone-Project-Facial-Keypoint-Detection-and-Real-time-Filtering">Deep Learning: Facial Keypoint Detection and Real time Filtering </a></h3>
                             <div class="meta">Keras</div>
-                            <div class="action"><a href="https://github.com/simoninithomas/Policy_gradients_CartPole">View on
+                            <div class="action"><a href="https://github.com/simoninithomas/AI_NANODEGREE-Computer-Vision-Capstone-Project-Facial-Keypoint-Detection-and-Real-time-Filtering">View on
                                 Github</a></div>
                             </div><!--//content-->
-                            <a class="link-mask" href="https://github.com/simoninithomas/Policy_gradients_CartPole"></a>
+                            <a class="link-mask" href="https://github.com/simoninithomas/AI_NANODEGREE-Computer-Vision-Capstone-Project-Facial-Keypoint-Detection-and-Real-time-Filtering"></a>
                         </div><!--//item-inner-->
                     </div><!--//item-->
 
-                    <!-- AINANOTERM2 Project 3 -->
-                    <div class="item ai col-md-3 col-xs-6 ">
+
+                    <!-- AINANOTERM2 Project 2 -->
+
+                    <div class="item ai col-md-3 col-xs-6 " >
                         <div class="item-inner">
                             <figure class="figure">
-                                <img class="img-fluid" src="assets/images/portfolio/AINANO2.png" alt="">
+                                <img class="img-fluid" src="http://media.tumblr.com/73563fe980c15fc68afd9a9526899b72/tumblr_inline_mhq4xiMyoq1qz4rgp.jpg" alt="RNN">
                             </figure>
                             <div class="content text-left">
-                                <h3 class="sub-title"><a href="https://github.com/simoninithomas/AI_NANODEGREE-Computer-Vision-Capstone-Project-Facial-Keypoint-Detection-and-Real-time-Filtering">Deep Learning: Facial Keypoint Detection and Real time Filtering </a></h3>
+                                <h3 class="sub-title"><a href="https://github.com/simoninithomas/AI_NANODEGREE-RNN-time-series-prediction-and-text-generation">Deep Learning: RNN time series prediction and text generation</a></h3>
                                 <div class="meta">Keras</div>
-                                <div class="action"><a href="https://github.com/simoninithomas/AI_NANODEGREE-Computer-Vision-Capstone-Project-Facial-Keypoint-Detection-and-Real-time-Filtering">View on
+                                <div class="action"><a href="https://github.com/simoninithomas/AI_NANODEGREE-RNN-time-series-prediction-and-text-generation">View on
                                     Github</a></div>
                                 </div><!--//content-->
-                                <a class="link-mask" href="https://github.com/simoninithomas/AI_NANODEGREE-Computer-Vision-Capstone-Project-Facial-Keypoint-Detection-and-Real-time-Filtering"></a>
+                                <a class="link-mask" href="https://github.com/simoninithomas/AI_NANODEGREE-RNN-time-series-prediction-and-text-generation"></a>
                             </div><!--//item-inner-->
                         </div><!--//item-->
 
-
-                        <!-- AINANOTERM2 Project 2 -->
-
-                        <div class="item ai col-md-3 col-xs-6 " >
+                    </div>
+                    <!-- AINANOTERM2 Project 1 -->
+                    <div class="items-wrapper isotope row" >
+                        <div class="item ai col-md-3 col-xs-6 ">
                             <div class="item-inner">
                                 <figure class="figure">
-                                    <img class="img-fluid" src="http://media.tumblr.com/73563fe980c15fc68afd9a9526899b72/tumblr_inline_mhq4xiMyoq1qz4rgp.jpg" alt="">
+                                    <img class="img-fluid" src="https://raw.githubusercontent.com/simoninithomas/AI_NANODEGREE-CNN-Dog-breeder-recognizer/master/images/sample_dog_output.png" alt="CNN Dog Breeder">
                                 </figure>
                                 <div class="content text-left">
-                                    <h3 class="sub-title"><a href="https://github.com/simoninithomas/AI_NANODEGREE-RNN-time-series-prediction-and-text-generation">Deep Learning: RNN time series prediction and text generation</a></h3>
+                                    <h3 class="sub-title"><a href="https://github.com/simoninithomas/AI_NANODEGREE-CNN-Dog-breeder-recognizer">Deep Learning: Dog breeder recognizer</a></h3>
                                     <div class="meta">Keras</div>
-                                    <div class="action"><a href="https://github.com/simoninithomas/AI_NANODEGREE-RNN-time-series-prediction-and-text-generation">View on
+                                    <div class="action"><a href="https://github.com/simoninithomas/AI_NANODEGREE-CNN-Dog-breeder-recognizer">View on
                                         Github</a></div>
                                     </div><!--//content-->
-                                    <a class="link-mask" href="https://github.com/simoninithomas/AI_NANODEGREE-RNN-time-series-prediction-and-text-generation"></a>
+                                    <a class="link-mask" href="https://github.com/simoninithomas/AI_NANODEGREE-CNN-Dog-breeder-recognizer"></a>
                                 </div><!--//item-inner-->
                             </div><!--//item-->
-
                         </div>
-                        <!-- AINANOTERM2 Project 1 -->
+
+                        <!-- DNLF Project 5 -->
                         <div class="items-wrapper isotope row" >
                             <div class="item ai col-md-3 col-xs-6 ">
                                 <div class="item-inner">
                                     <figure class="figure">
-                                        <img class="img-fluid" src="https://raw.githubusercontent.com/simoninithomas/AI_NANODEGREE-CNN-Dog-breeder-recognizer/master/images/sample_dog_output.png" alt="">
+                                        <img class="img-fluid" src="assets/images/portfolio/DLFN_project5.jpg" alt="Face generator">
                                     </figure>
                                     <div class="content text-left">
-                                        <h3 class="sub-title"><a href="https://github.com/simoninithomas/AI_NANODEGREE-CNN-Dog-breeder-recognizer">Deep Learning: Dog breeder recognizer</a></h3>
-                                        <div class="meta">Keras</div>
-                                        <div class="action"><a href="https://github.com/simoninithomas/AI_NANODEGREE-CNN-Dog-breeder-recognizer">View on
+                                        <h3 class="sub-title"><a href="https://github.com/simoninithomas/DLFN_Face_generator">Deep Learning: Face generator</a></h3>
+                                        <div class="meta">TensorFlow</div>
+                                        <div class="action"><a href="https://github.com/simoninithomas/DLFN_Face_generator">View on
                                             Github</a></div>
                                         </div><!--//content-->
-                                        <a class="link-mask" href="https://github.com/simoninithomas/AI_NANODEGREE-CNN-Dog-breeder-recognizer"></a>
+                                        <a class="link-mask" href="https://github.com/simoninithomas/DLFN_Face_generator"></a>
                                     </div><!--//item-inner-->
                                 </div><!--//item-->
-                            </div>
 
-                            <!-- DNLF Project 5 -->
-                            <div class="items-wrapper isotope row" >
-                                <div class="item ai col-md-3 col-xs-6 ">
+
+                                <!-- DNLF Project 4 -->
+
+                                <div class="item ai col-md-3 col-xs-6">
                                     <div class="item-inner">
                                         <figure class="figure">
-                                            <img class="img-fluid" src="assets/images/portfolio/DLFN_project5.jpg" alt="">
+                                            <img class="img-fluid" src="assets/images/portfolio/DLFN_project4.jpg" alt="French translator">
                                         </figure>
                                         <div class="content text-left">
-                                            <h3 class="sub-title"><a href="https://github.com/simoninithomas/DLFN_Face_generator">Deep Learning: Face generator</a></h3>
+                                            <h3 class="sub-title"><a href="https://github.com/simoninithomas/DLFN_Language_Translation">Deep Learning: English/ French translator</a></h3>
                                             <div class="meta">TensorFlow</div>
-                                            <div class="action"><a href="https://github.com/simoninithomas/DLFN_Face_generator">View on
-                                                Github</a></div>
+                                            <div class="action"><a href="https://github.com/simoninithomas/DLFN_Language_Translation">View
+                                                on Github</a></div>
                                             </div><!--//content-->
-                                            <a class="link-mask" href="https://github.com/simoninithomas/DLFN_Face_generator"></a>
+                                            <a class="link-mask" href="https://github.com/simoninithomas/DLFN_Language_Translation"></a>
                                         </div><!--//item-inner-->
                                     </div><!--//item-->
 
 
-                                    <!-- DNLF Project 4 -->
+                                    <!-- DNLF Project 3 -->
 
-                                    <div class="item ai col-md-3 col-xs-6">
+                                    <div class="item ai col-md-3 col-xs-6 ">
                                         <div class="item-inner">
                                             <figure class="figure">
-                                                <img class="img-fluid" src="assets/images/portfolio/DLFN_project4.jpg" alt="">
+                                                <img class="img-fluid" src="assets/images/portfolio/DLFN_project3.jpg" alt="Simpsons script AI">
                                             </figure>
                                             <div class="content text-left">
-                                                <h3 class="sub-title"><a href="https://github.com/simoninithomas/DLFN_Language_Translation">Deep Learning: English/ French translator</a></h3>
+                                                <h3 class="sub-title"><a href="https://github.com/simoninithomas/DLFN_Generate_The_Simpsons_Scripts">Deep Learning: Generate The Simpson's TV Scripts</a></h3>
                                                 <div class="meta">TensorFlow</div>
-                                                <div class="action"><a href="https://github.com/simoninithomas/DLFN_Language_Translation">View
-                                                    on Github</a></div>
+                                                <div class="action"><a href="https://github.com/simoninithomas/DLFN_Generate_The_Simpsons_Scripts">View on
+                                                    Github</a></div>
                                                 </div><!--//content-->
-                                                <a class="link-mask" href="https://github.com/simoninithomas/DLFN_Language_Translation"></a>
+                                                <a class="link-mask" href="https://github.com/simoninithomas/DLFN_Generate_The_Simpsons_Scripts"></a>
                                             </div><!--//item-inner-->
                                         </div><!--//item-->
 
 
-                                        <!-- DNLF Project 3 -->
+                                        <!-- DNLF Project 2 -->
 
-                                        <div class="item ai col-md-3 col-xs-6 ">
+                                        <div class="item ai col-md-3 col-xs-6">
                                             <div class="item-inner">
                                                 <figure class="figure">
-                                                    <img class="img-fluid" src="assets/images/portfolio/DLFN_project3.jpg" alt="">
+                                                    <img class="img-fluid" src="assets/images/portfolio/DLFN_project2.jpg" alt="Image classification">
                                                 </figure>
                                                 <div class="content text-left">
-                                                    <h3 class="sub-title"><a href="https://github.com/simoninithomas/DLFN_Generate_The_Simpsons_Scripts">Deep Learning: Generate The Simpson's TV Scripts</a></h3>
-                                                    <div class="meta">TensorFlow</div>
-                                                    <div class="action"><a href="https://github.com/simoninithomas/DLFN_Generate_The_Simpsons_Scripts">View on
-                                                        Github</a></div>
-                                                    </div><!--//content-->
-                                                    <a class="link-mask" href="https://github.com/simoninithomas/DLFN_Generate_The_Simpsons_Scripts"></a>
-                                                </div><!--//item-inner-->
-                                            </div><!--//item-->
+                                                    <h3 class="sub-title"><a href="https://github.com/simoninithomas/DLFN_Image_classification">Deep
+                                                        Learning: Image Classification</a></h3>
+                                                        <div class="meta">TensorFlow</div>
+                                                        <div class="action"><a href="https://github.com/simoninithomas/DLFN_Image_classification">View
+                                                            on Github</a></div>
+                                                        </div><!--//content-->
+                                                        <a class="link-mask" href="https://github.com/simoninithomas/DLFN_Image_classification"></a>
+                                                    </div><!--//item-inner-->
+                                                </div>
+
+                                                <!-- DNLF Project 1 -->
+                                                <div class="item ai col-md-3 col-xs-6">
+                                                    <div class="item-inner">
+                                                        <figure class="figure">
+                                                            <img class="img-fluid" src="assets/images/portfolio/DLFN_project1.jpg" alt="First neural net">
+                                                        </figure>
+                                                        <div class="content text-left">
+                                                            <h3 class="sub-title"><a href="https://github.com/simoninithomas/First_neural_network">Deep
+                                                                Learning: First Neural Network</a></h3>
+                                                                <div class="meta">TensorFlow</div>
+                                                                <div class="action"><a href="https://github.com/simoninithomas/First_neural_network">View on
+                                                                    Github</a></div>
+                                                                </div><!--//content-->
+                                                                <a class="link-mask" href="https://github.com/simoninithomas/First_neural_network"></a>
+                                                            </div><!--//item-inner-->
+                                                        </div><!--//item-->
+
+                                                        <!-- Marketplace -->
+                                                        <div class="item backend frontend col-md-3 col-xs-6">
+                                                            <div class="item-inner">
+                                                                <figure class="figure">
+                                                                    <img class="img-fluid" src="assets/images/portfolio/marketplace.jpg" alt="Lyon 3 Marketplace Boutique">
+                                                                </figure>
+                                                                <div class="content text-left">
+                                                                    <h3 class="sub-title"><a href="https://boutique.univ-lyon3.fr/">University of Jean Moulin's (Lyon III) Marketplace</a></h3>
+                                                                    <div class="meta">Prestashop / PHP</div>
+                                                                    <div class="action"><a href="https://boutique.univ-lyon3.fr/">Website</a></div>
+                                                                </div><!--//content-->
+                                                                <a class="link-mask" href="https://boutique.univ-lyon3.fr/"></a>
+                                                            </div><!--//item-inner-->
+                                                        </div><!--//item-->
 
 
-                                            <!-- DNLF Project 2 -->
+                                                        <!-- Little coffee shop -->
+                                                        <div class="item app col-md-3 col-xs-6">
+                                                            <div class="item-inner">
+                                                                <figure class="figure">
+                                                                    <img class="img-fluid" src="assets/images/portfolio/littleCoffeeShop_framed.jpg" alt="Little coffee shop">
+                                                                </figure>
+                                                                <div class="content text-left">
+                                                                    <h3 class="sub-title"><a href="https://github.com/simoninithomas/LittleCoffeeShop">Little Coffee
+                                                                        Shop App</a></h3>
+                                                                        <div class="meta">Java</div>
+                                                                        <div class="action"><a href="https://github.com/simoninithomas/LittleCoffeeShop">View on
+                                                                            Github</a></div>
+                                                                        </div><!--//content-->
+                                                                        <a class="link-mask" href="https://github.com/simoninithomas/LittleCoffeeShop"></a>
+                                                                    </div><!--//item-inner-->
+                                                                </div><!--//item-->
 
-                                            <div class="item ai col-md-3 col-xs-6">
-                                                <div class="item-inner">
-                                                    <figure class="figure">
-                                                        <img class="img-fluid" src="assets/images/portfolio/DLFN_project2.jpg" alt="">
-                                                    </figure>
-                                                    <div class="content text-left">
-                                                        <h3 class="sub-title"><a href="https://github.com/simoninithomas/DLFN_Image_classification">Deep
-                                                            Learning: Image Classification</a></h3>
-                                                            <div class="meta">TensorFlow</div>
-                                                            <div class="action"><a href="https://github.com/simoninithomas/DLFN_Image_classification">View
-                                                                on Github</a></div>
-                                                            </div><!--//content-->
-                                                            <a class="link-mask" href="https://github.com/simoninithomas/DLFN_Image_classification"></a>
-                                                        </div><!--//item-inner-->
-                                                    </div>
-
-                                                    <!-- DNLF Project 1 -->
-                                                    <div class="item ai col-md-3 col-xs-6">
-                                                        <div class="item-inner">
-                                                            <figure class="figure">
-                                                                <img class="img-fluid" src="assets/images/portfolio/DLFN_project1.jpg" alt="">
-                                                            </figure>
-                                                            <div class="content text-left">
-                                                                <h3 class="sub-title"><a href="https://github.com/simoninithomas/First_neural_network">Deep
-                                                                    Learning: First Neural Network</a></h3>
-                                                                    <div class="meta">TensorFlow</div>
-                                                                    <div class="action"><a href="https://github.com/simoninithomas/First_neural_network">View on
-                                                                        Github</a></div>
-                                                                    </div><!--//content-->
-                                                                    <a class="link-mask" href="https://github.com/simoninithomas/First_neural_network"></a>
-                                                                </div><!--//item-inner-->
-                                                            </div><!--//item-->
-
-                                                            <!-- Marketplace -->
-                                                            <div class="item backend frontend col-md-3 col-xs-6">
-                                                                <div class="item-inner">
-                                                                    <figure class="figure">
-                                                                        <img class="img-fluid" src="assets/images/portfolio/marketplace.jpg" alt="">
-                                                                    </figure>
-                                                                    <div class="content text-left">
-                                                                        <h3 class="sub-title"><a href="https://boutique.univ-lyon3.fr/">University of Jean Moulin's (Lyon III) Marketplace</a></h3>
-                                                                        <div class="meta">Prestashop / PHP</div>
-                                                                        <div class="action"><a href="https://boutique.univ-lyon3.fr/">Website</a></div>
-                                                                    </div><!--//content-->
-                                                                    <a class="link-mask" href="https://boutique.univ-lyon3.fr/"></a>
-                                                                </div><!--//item-inner-->
-                                                            </div><!--//item-->
-
-
-                                                            <!-- Little coffee shop -->
-                                                            <div class="item app col-md-3 col-xs-6">
-                                                                <div class="item-inner">
-                                                                    <figure class="figure">
-                                                                        <img class="img-fluid" src="assets/images/portfolio/littleCoffeeShop_framed.jpg" alt="">
-                                                                    </figure>
-                                                                    <div class="content text-left">
-                                                                        <h3 class="sub-title"><a href="https://github.com/simoninithomas/LittleCoffeeShop">Little Coffee
-                                                                            Shop App</a></h3>
-                                                                            <div class="meta">Java</div>
-                                                                            <div class="action"><a href="https://github.com/simoninithomas/LittleCoffeeShop">View on
-                                                                                Github</a></div>
+                                                                <!-- Instant ads web -->
+                                                                <div class="item frontend col-md-3 col-xs-6">
+                                                                    <div class="item-inner">
+                                                                        <figure class="figure">
+                                                                            <img class="img-fluid" src="assets/images/portfolio/instantads.jpg" alt="Instant ads">
+                                                                        </figure>
+                                                                        <div class="content text-left">
+                                                                            <h3 class="sub-title"><a href="http://www.simoninithomas.com/websites/instantads">Website for a
+                                                                                ficitive project 'Instant'ads'</a></h3>
+                                                                                <div class="meta">HTML5/CSS3/AngularJS</div>
+                                                                                <!--<div class="action"><a href="http://www.simoninithomas.com/websites/instantads">Visit the website</a></div>-->
                                                                             </div><!--//content-->
-                                                                            <a class="link-mask" href="https://github.com/simoninithomas/LittleCoffeeShop"></a>
+                                                                            <!--<a class="link-mask" href="http://www.simoninithomas.com/websites/instantads"></a> -->
                                                                         </div><!--//item-inner-->
                                                                     </div><!--//item-->
 
-                                                                    <!-- Instant ads web -->
-                                                                    <div class="item frontend col-md-3 col-xs-6">
+                                                                    <!-- NewsSwipe App -->
+                                                                    <div class="item app col-md-3 col-xs-6">
                                                                         <div class="item-inner">
                                                                             <figure class="figure">
-                                                                                <img class="img-fluid" src="assets/images/portfolio/instantads.jpg" alt="">
+                                                                                <img class="img-fluid" src="assets/images/portfolio/newsswipeapp.jpg" alt="NewsSwipe App">
                                                                             </figure>
                                                                             <div class="content text-left">
-                                                                                <h3 class="sub-title"><a href="http://www.simoninithomas.com/websites/instantads">Website for a
-                                                                                    ficitive project 'Instant'ads'</a></h3>
-                                                                                    <div class="meta">HTML5/CSS3/AngularJS</div>
-                                                                                    <!--<div class="action"><a href="http://www.simoninithomas.com/websites/instantads">Visit the website</a></div>-->
-                                                                                </div><!--//content-->
-                                                                                <!--<a class="link-mask" href="http://www.simoninithomas.com/websites/instantads"></a> -->
-                                                                            </div><!--//item-inner-->
-                                                                        </div><!--//item-->
+                                                                                <h3 class="sub-title"><a href="https://play.google.com/store/apps/details?id=com.NewsSwipe.betatest">NewsSwipe
+                                                                                    Android App</a></h3>
+                                                                                    <div class="meta">Ionic (cordova), Parse</div>
+                                                                                    <div class="action"><a href="https://play.google.com/store/apps/details?id=com.NewsSwipe.betatest">View on
+                                                                                        Github</a></div>
+                                                                                    </div><!--//content-->
+                                                                                    <a class="link-mask" href="https://play.google.com/store/apps/details?id=com.NewsSwipe.betatest"></a>
+                                                                                </div><!--//item-inner-->
+                                                                            </div><!--//item-->
 
-                                                                        <!-- NewsSwipe App -->
-                                                                        <div class="item app col-md-3 col-xs-6">
-                                                                            <div class="item-inner">
-                                                                                <figure class="figure">
-                                                                                    <img class="img-fluid" src="assets/images/portfolio/newsswipeapp.jpg" alt="NewsSwipe App">
-                                                                                </figure>
-                                                                                <div class="content text-left">
-                                                                                    <h3 class="sub-title"><a href="https://play.google.com/store/apps/details?id=com.NewsSwipe.betatest">NewsSwipe
-                                                                                        Android App</a></h3>
-                                                                                        <div class="meta">Ionic (cordova), Parse</div>
-                                                                                        <div class="action"><a href="https://play.google.com/store/apps/details?id=com.NewsSwipe.betatest">View on
-                                                                                            Github</a></div>
+                                                                            <!-- NewsCrawlBot -->
+                                                                            <div class="item frontend backend col-md-3 col-xs-6">
+                                                                                <div class="item-inner">
+                                                                                    <figure class="figure">
+                                                                                        <img class="img-fluid" src="assets/images/portfolio/NCBE.jpg" alt="NewsCrawlBot">
+                                                                                    </figure>
+                                                                                    <div class="content text-left">
+                                                                                        <h3 class="sub-title"><a href="https://github.com/simoninithomas/News-Crawler-Parse-Backend">NewsCrawlBot</a>
+                                                                                        </h3>
+                                                                                        <div class="meta">Python, Scrapy, Parse</div>
+                                                                                        <div class="action"><a href="https://github.com/simoninithomas/News-Crawler-Parse-Backend">View
+                                                                                            on Github</a></div>
                                                                                         </div><!--//content-->
-                                                                                        <a class="link-mask" href="https://play.google.com/store/apps/details?id=com.NewsSwipe.betatest"></a>
+                                                                                        <a class="link-mask" href="https://github.com/simoninithomas/News-Crawler-Parse-Backend"></a>
                                                                                     </div><!--//item-inner-->
                                                                                 </div><!--//item-->
 
-                                                                                <!-- NewsCrawlBot -->
+                                                                                <!-- NewsSwipe -->
+                                                                                <div class="item frontend col-md-3 col-xs-6">
+                                                                                    <div class="item-inner">
+                                                                                        <figure class="figure">
+                                                                                            <img class="img-fluid" src="assets/images/portfolio/newsswipe-website.jpg" alt="NewsSwipe">
+                                                                                        </figure>
+                                                                                        <div class="content text-left">
+                                                                                            <h3 class="sub-title"><a href="http://www.simoninithomas.com/Newsswipe/#/">NewsSwipe website</a>
+                                                                                            </h3>
+                                                                                            <div class="meta">HTML5/CSS3/AngularJS</div>
+                                                                                            <!-- <div class="action"><a href="http://www.simoninithomas.com/Newsswipe/#/">Visit the website</a></div> -->
+                                                                                        </div><!--//content-->
+                                                                                        <!-- <a class="link-mask" href="http://www.simoninithomas.com/Newsswipe/#/"></a> -->
+                                                                                    </div><!--//item-inner-->
+                                                                                </div><!--//item-->
+
+                                                                                <!-- ALUMNI -->
                                                                                 <div class="item frontend backend col-md-3 col-xs-6">
                                                                                     <div class="item-inner">
                                                                                         <figure class="figure">
-                                                                                            <img class="img-fluid" src="assets/images/portfolio/NCBE.jpg" alt="NewsCrawlBot">
+                                                                                            <img class="img-fluid" src="assets/images/portfolio/alumni.jpg" alt="Alumni">
                                                                                         </figure>
                                                                                         <div class="content text-left">
-                                                                                            <h3 class="sub-title"><a href="https://github.com/simoninithomas/News-Crawler-Parse-Backend">NewsCrawlBot</a>
-                                                                                            </h3>
-                                                                                            <div class="meta">Python, Scrapy, Parse</div>
-                                                                                            <div class="action"><a href="https://github.com/simoninithomas/News-Crawler-Parse-Backend">View
-                                                                                                on Github</a></div>
-                                                                                            </div><!--//content-->
-                                                                                            <a class="link-mask" href="https://github.com/simoninithomas/News-Crawler-Parse-Backend"></a>
-                                                                                        </div><!--//item-inner-->
-                                                                                    </div><!--//item-->
+                                                                                            <h3 class="sub-title"><a href="http://www.simoninithomas.com/Alumni/#/">Alumni website</a></h3>
+                                                                                            <div class="meta">HTML5/CSS3/AngularJS/ <br> PHP/MySQL</div>
+                                                                                            <!-- <div class="action"><a href="http://www.simoninithomas.com/Alumni/#/">Visit the website</a></div>-->
+                                                                                        </div><!--//content-->
+                                                                                        <!-- <a class="link-mask" href="http://www.simoninithomas.com/Alumni/#/"></a> -->
+                                                                                    </div><!--//item-inner-->
+                                                                                </div><!--//item-->
 
-                                                                                    <!-- NewsSwipe -->
-                                                                                    <div class="item frontend col-md-3 col-xs-6">
-                                                                                        <div class="item-inner">
-                                                                                            <figure class="figure">
-                                                                                                <img class="img-fluid" src="assets/images/portfolio/newsswipe-website.jpg" alt="">
-                                                                                            </figure>
-                                                                                            <div class="content text-left">
-                                                                                                <h3 class="sub-title"><a href="http://www.simoninithomas.com/Newsswipe/#/">NewsSwipe website</a>
-                                                                                                </h3>
-                                                                                                <div class="meta">HTML5/CSS3/AngularJS</div>
-                                                                                                <!-- <div class="action"><a href="http://www.simoninithomas.com/Newsswipe/#/">Visit the website</a></div> -->
-                                                                                            </div><!--//content-->
-                                                                                            <!-- <a class="link-mask" href="http://www.simoninithomas.com/Newsswipe/#/"></a> -->
-                                                                                        </div><!--//item-inner-->
-                                                                                    </div><!--//item-->
-
-                                                                                    <!-- ALUMNI -->
-                                                                                    <div class="item frontend backend col-md-3 col-xs-6">
-                                                                                        <div class="item-inner">
-                                                                                            <figure class="figure">
-                                                                                                <img class="img-fluid" src="assets/images/portfolio/alumni.jpg" alt="">
-                                                                                            </figure>
-                                                                                            <div class="content text-left">
-                                                                                                <h3 class="sub-title"><a href="http://www.simoninithomas.com/Alumni/#/">Alumni website</a></h3>
-                                                                                                <div class="meta">HTML5/CSS3/AngularJS/ <br> PHP/MySQL</div>
-                                                                                                <!-- <div class="action"><a href="http://www.simoninithomas.com/Alumni/#/">Visit the website</a></div>-->
-                                                                                            </div><!--//content-->
-                                                                                            <!-- <a class="link-mask" href="http://www.simoninithomas.com/Alumni/#/"></a> -->
-                                                                                        </div><!--//item-inner-->
-                                                                                    </div><!--//item-->
-
-                                                                                </div><!--//item-wrapper-->
-
-                                                                            </section><!--//section-->
-
-                                                                            <section id="contact-section" class="contact-section section">
-                                                                                <h2 class="section-title">Get in Touch</h2>
-                                                                                <div class="intro">
-                                                                                    <!--<img class="profile-image" src="assets/images/cutmypic.png" alt="">-->
-                                                                                    <div class="dialog">
-
-
-                                                                                      <p>  ⚠️  I’m currently <b>looking for a job 👨‍💻</b>:   <a href="mailto:hello@simoninithomas.com">drop me a line 
-                                                                                      </a>
-
-                                                                                      or call me  at <a href="tel:0033670234606">0033 670 234 606 (FRANCE)</a>, I’ll be happy to speak with you about your projects!</p>
-
-
-
-                                                                                      <ul class="social list-inline">
-
-
-                                                                                        <li><a href="mailto:hello@simoninithomas.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-                                                                                        </li>
-                                                                                        <li><a href="https://twitter.com/ThomasSimonini"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                                                                        </li>
-                                                                                        <li><a href="https://fr.linkedin.com/in/simoninithomas"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                                                                        <li><a href="https://github.com/simoninithomas"><i class="fa fa-github" aria-hidden="true"></i></a>
-                                                                                        </li>
-                                                                                        <li><a href="http://stackoverflow.com/story/simonini-thomas"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a></li>
-                                                                                        <li><a href="https://medium.com/@thomassimonini"><i class="fa fa-medium" aria-hidden="true"></i></a>
-                                                                                        </li>
-                                                                                        <li><a href="https://www.quora.com/profile/Thomas-Simonini-1"><i class="fa fa-quora" aria-hidden="true"></i></a></li>
-
-
-                                                                                    </ul><!--//social-->
-                                                                                </div><!--//diaplog-->
-                                                                            </div><!--//intro-->
+                                                                            </div><!--//item-wrapper-->
 
                                                                         </section><!--//section-->
 
-                                                                    </div><!--//wrapper-->
+                                                                        <section id="contact-section" class="contact-section section">
+                                                                            <h2 class="section-title">Get in Touch</h2>
+                                                                            <div class="intro">
+                                                                                <!--<img class="profile-image" src="assets/images/cutmypic.png" alt="">-->
+                                                                                <div class="dialog">
+
+
+                                                                                  <p>  ⚠️  I’m currently <b>looking for a job 👨‍💻</b>:   <a href="mailto:hello@simoninithomas.com">drop me a line 
+                                                                                  </a>
+
+                                                                                  or call me  at <a href="tel:0033670234606">0033 670 234 606 (FRANCE)</a>, I’ll be happy to speak with you about your projects!</p>
+
+
+
+                                                                                  <ul class="social list-inline">
+
+
+                                                                                    <li><a href="mailto:hello@simoninithomas.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                                                                                    </li>
+                                                                                    <li><a href="https://twitter.com/ThomasSimonini"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                                                                    </li>
+                                                                                    <li><a href="https://fr.linkedin.com/in/simoninithomas"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                                                                    <li><a href="https://github.com/simoninithomas"><i class="fa fa-github" aria-hidden="true"></i></a>
+                                                                                    </li>
+                                                                                    <li><a href="http://stackoverflow.com/story/simonini-thomas"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a></li>
+                                                                                    <li><a href="https://medium.com/@thomassimonini"><i class="fa fa-medium" aria-hidden="true"></i></a>
+                                                                                    </li>
+                                                                                    <li><a href="https://www.quora.com/profile/Thomas-Simonini-1"><i class="fa fa-quora" aria-hidden="true"></i></a></li>
+
+
+                                                                                </ul><!--//social-->
+                                                                            </div><!--//diaplog-->
+                                                                        </div><!--//intro-->
+
+                                                                    </section><!--//section-->
+
+                                                                </div><!--//wrapper-->
 
 <!--<footer class="footer text-center">
     <div class="container">
@@ -972,16 +956,18 @@
 
 
 <!-- Javascript -->
-<script type="text/javascript" src="assets/js/jquery-1.12.4.min.js"></script>
-<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="assets/js/back-to-top.js"></script>
+<!-- Font awesome JS -->
+<script src="https://use.fontawesome.com/1688c333dd.js"></script>
+
+
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+
+<script type="text/javascript" src="assets/js/back-to-top.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.scrollTo.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.easypiechart.min.js"></script>
-
-
-<!-- github activity plugin -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
-<script type="text/javascript" src="assets/js/github-activity/src/github-activity.js"></script>
 
 <!-- custom js -->
 <script type="text/javascript" src="assets/js/main.js"></script>
