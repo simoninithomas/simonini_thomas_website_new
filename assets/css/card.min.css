@@ -1,0 +1,157 @@
+  @import url('https://fonts.googleapis.com/css?family=Lato:300, 400');
+
+    .home h3 {
+        font-family: Lato light;
+    }
+
+    .home h1 {
+        font-family: Lato light;
+        font-size:  1.5em;
+    }
+
+    .html{
+        min-height: 100%;
+        background: #2c3e50;
+        background: -webkit-linear-gradient(to right,  #3498db,  #2c3e50);
+        background: linear-gradient(to right,  #3498db,  #2c3e50);
+    }
+
+    .card-profile {
+        background-color: #e6e5e1;
+        border-radius: 0;
+        border: 0;
+        box-shadow: 1em 1em 2em rgba(0,  0,  0,  0.2);
+        z-index: 2;
+    }
+
+    .card-profile .card-img-top {
+        border-radius: 0;
+        max-height: 30%
+        max-width:30%;
+    }
+    .card-profile .card-img-top img{
+        border-radius: 0;
+
+    }
+    .card-profile .card-img-profile {
+        max-width: 20%;
+        border-radius: 50%;
+        margin-top: -95px;
+        margin-bottom: 15px;
+        border: 5px solid #e6e5e1;
+        
+    }
+
+    .card-profile .card-title {
+        margin-bottom: 25px;
+        font-family: Lato;
+    }
+
+    .card-profile .card-title small {
+        display: block;
+        font-family: Lato light;
+        font-size: .8em;
+        margin-top: .2em;
+    }
+
+    .card-profile .card-links {
+        margin-bottom: 25px;
+    }
+
+    .card-profile .card-links .fa {
+        margin: 0 1em;
+        font-size: 1.6em;
+    }
+
+    .card-profile .card-links .fa:focus,  .card-profile .card-links .fa:hover {
+        text-decoration: none;
+    }
+
+    .card-profile .card-links .fa.fa-envelope {
+        color: #4078c0;
+    }
+
+    .card-profile .card-links .fa.fa-envelope:hover {
+        color: #0078d7;
+    }
+
+    .card-profile .card-links .fa.fa-medium {
+        color: #00ab6c;
+    }
+
+    .card-profile .card-links .fa.fa-medium:hover {
+        color: #00ab6c;
+    }
+
+    .card-profile .card-links .fa.fa-github {
+        color: #333;
+    }
+
+    .card-profile .card-links .fa.fa-github:hover {
+        color: #333;
+    }
+
+    .card-profile .card-links .fa.fa-twitter {
+        color: #68aade;
+    }
+
+    .card-profile .card-links .fa.fa-twitter:hover {
+        color: #3e92d5;
+    }
+
+    .card-profile .card-links .fa.fa-stack-overflow {
+        color: #f48024;
+    }
+
+    .card-profile .card-links .fa.fa-stack-overflow:hover {
+        color: #f48024;
+    }
+
+    .card-profile .card-links .fa.fa-product-hunt {
+        color: #da552f;
+    }
+
+    .card-profile .card-links .fa.fa-product-hunt:hover {
+        color: #da552f;
+    }
+
+    .card-profile .card-links .fa.fa-quora {
+        color: #a82400;
+    }
+
+    .card-profile .card-links .fa.fa-quora:hover {
+        color: #a82400;
+    }
+
+    .card-profile .card-links .fa.fa-linkedin {
+        color: #0077b5;
+    }
+
+    .card-profile .card-links .fa.fa-linkedin:hover {
+        color: #0077b5;
+    }
+
+    .home button {
+        margin-bottom: 15px;
+    }
+
+    .avatar {
+        position: relative;
+        top: -100px;
+        margin-bottom: 0px!important;
+        max-height: 50px;
+    }
+
+
+
+
+    .avatar img {
+        width: 150px;
+        max-width: 150px;
+        max-height: 150px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+
+        border: 5px solid rgba(255,255,255,0.5);
+    }
